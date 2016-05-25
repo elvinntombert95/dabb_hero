@@ -1,0 +1,188 @@
+body {
+  font-family: lato;
+  background: url(../img/back2back.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+/*PAGE ONE - OMEPAGE*/
+
+  /*PUSHY BUTTON SIDEBAR*/
+    /* Menu Button */
+    #side {
+      position: absolute;
+      left: -10px;
+    }
+    #side ul li{
+      text-align: center;
+    }
+
+
+    .menu-btn {
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+      cursor: pointer;
+    }
+    /* Menu Styles */
+    .sidebar {
+      color: #b3b3b1;
+    }
+    .sidebar h4 {
+      padding: 0.2em 1em;
+    }
+    .pushy {
+      width: 190px;
+      font-size: 0.9em;
+      font-weight: bold;
+      background: #333332;
+      -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
+      box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
+    }
+    .pushy a {
+      padding: 15px 30px;
+      color: #b3b3b1;
+      text-decoration: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .pushy a:hover {
+      color: #ffffff;
+      background: #07091f;
+    }
+    #main-menu {
+      font-size: 30px;
+      text-align: center;
+      padding: 30px 0 30px 0;
+    }
+
+#container {
+      width: 99%;
+}
+
+#icon-setting {
+  width: 53px;
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+}
+
+#social {
+  position: absolute;
+  left: 86%;
+}
+
+#social ul li {
+  display: inline-block;
+}
+
+#facebook,#twitter {
+  width: 53px;
+  margin-left: 21px;
+}
+
+header img {
+  width:100px;
+  margin:auto;
+  display: block;
+  margin-bottom: 18px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+}
+
+/*SONGS*/
+#mainwrapper2 {
+  font: 10pt normal Arial, sans-serif;
+  height: auto;
+  text-align: center;
+  width: 660px;
+}
+
+/* Image Box Style */
+#mainwrapper2 .box2 {
+/*  border: 5px solid #fff;*/
+  cursor: pointer;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+}
+
+#mainwrapper2 .box2 img {
+  position: absolute;
+  left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out; 
+  transition: all 300ms ease-out;
+  width: 200px;
+  height: 200px;
+}
+
+/* Caption Common Style */
+#mainwrapper2 .box2 .caption {
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out; 
+    transition: all 300ms ease-out;
+  left: 0;
+}
+
+/** Caption 3: Fade **/
+#mainwrapper2 .box2 .fade-caption, #mainwrapper2 .box2 .scale-caption  {
+  opacity: 0;
+  width: 170px;
+  height: 170px;
+  text-align: left;
+  padding: 15px;
+}
+
+/** Fade Caption :hover Behaviour **/
+#mainwrapper2 .box2:hover .fade-caption, #mainwrapper2 .box2:hover .scale-caption  {
+  opacity: 1;
+}
+
+#songs {
+    margin: auto;
+    display: block;
+    width: 90%;
+    margin-bottom: 70px;
+}
+
+#songs h3 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#songs h3, p, article{
+  text-align: center;
+      line-height: 2.3;
+}
+
+#songs article {
+  font-style: oblique;
+    font-family: cursive;
+}
+
+#songs p {
+      font-size: 19px;
+}
+
+#songs ul a li {
+  display: inline-block;
+      width: 197px;
+    height: 197px;
+}
