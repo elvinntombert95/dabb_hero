@@ -7,11 +7,11 @@ $(function () {
 
 // VARIABLES GLOBALES
 
-var red_timing = [0,2365,3330,7400,11200];
-var blue_timing = [1000,2880,3768,4665,8100,12000];
-var yellow_timing = [1480,5140,8800,9702,10680,12500,13365];
-var green_timing = [6000,10210,13750,14230];
-var dab_timing = [14715];
+var red_timing = [0,3830,4060,6600,7522,30035];
+var blue_timing = [1520,3600,5215];
+var yellow_timing = [1750,3370,5450];
+var green_timing = [1985,5680];
+var dab_timing = [29640];
 var game = {};
 game.score = 0;
 var count = 0;
@@ -131,7 +131,7 @@ function init() {
     for (var l = 0; l < green_timing.length; l++) {
         setTimeout(createGreen, green_timing[l]);
     }
-    setTimeout(affichageScore, 42000);
+    setTimeout(affichageScore, 44200);
 }
 
 // function fivePoint() {

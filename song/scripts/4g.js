@@ -7,11 +7,13 @@ $(function () {
 
 // VARIABLES GLOBALES
 
-var red_timing = [0,2365,3330,7400,11200];
-var blue_timing = [1000,2880,3768,4665,8100,12000];
-var yellow_timing = [1480,5140,8800,9702,10680,12500,13365];
-var green_timing = [6000,10210,13750,14230];
-var dab_timing = [14715];
+var red_timing    = [0,990,1480,2000,4000,16000,
+                    8000,9000,9500,10000,12000];
+var blue_timing   = [500,1245,1745,2500,5000,16000,
+                    8500,9240,9750,10500,13000];
+var yellow_timing = [3000,6000,7000,16000,11000,14000,15000];
+var green_timing  = [3500,6500,7500,16000,11500,14500,15500];
+var dab_timing    = [0,2000,4000,6000,8000,10000,12000,14000,16000];
 var game = {};
 game.score = 0;
 var count = 0;
@@ -26,10 +28,10 @@ function affichageScore(){
       afficheScore.innerHTML = "Score : "+ game.score;
       var mGameOver = document.getElementById('end_game');
       var image = document.getElementById('img');
-      var listImg = ["<img src='img/dabb.jpg'>","<img src='img/datface.jpg'>"];
-      var listQuote = ["BIEN JOUÉ! Tu dabb presque aussi bien que Wladimir!","Elvinn donne des cours de dabb le jeudi après midi, tu devrais y aller..."];
+      var listImg = ["<img src='img/grandma.jpg'>","<img src='img/young.jpg'>"];
+      var listQuote = ["SUPER! Tu es maintenant en concurrence avec Wladimir!","Sorry but Young metro don't trust you..."];
 
-      if (game.score> 350) {
+      if (game.score> 600) {
         image.innerHTML = listImg[0];
         mGameOver.innerHTML = listQuote[0];
       }
@@ -131,14 +133,14 @@ function init() {
     for (var l = 0; l < green_timing.length; l++) {
         setTimeout(createGreen, green_timing[l]);
     }
-    setTimeout(affichageScore, 42000);
+    setTimeout(affichageScore, 89666);
 }
 
-// function fivePoint() {
-//     game.score += 5;
-//     $(".score").text(game.score);
-//     console.log("5pts");
-// }
+/*function fivePoint() {
+     game.score += 5;
+     $(".score").text(game.score);
+     console.log("5pts");
+}*/
 
 function tenPoint() {
     game.score += 10;
@@ -265,5 +267,5 @@ $(document).keydown(function (e) {
         $(".bluetarget").animate({opacity: 'toggle'}, "fast").delay(10).fadeIn(10);
         $(".yellowtarget").animate({opacity: 'toggle'}, "fast").delay(10).fadeIn(10);
         $(".greentarget").animate({opacity: 'toggle'}, "fast").delay(10).fadeIn(10);
-    }
+    } 
 });
