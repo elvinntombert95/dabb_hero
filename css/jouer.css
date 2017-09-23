@@ -157,9 +157,16 @@ h1 {
 
 #songs {
     margin: auto;
-    display: block;
-    width: 90%;
+    width: 100%;
+    max-width: 1205px;
     margin-bottom: 70px;
+}
+
+#songs ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #songs h3 {
@@ -182,7 +189,6 @@ h1 {
 }
 
 #songs ul a li {
-  display: inline-block;
       width: 197px;
     height: 197px;
 }
